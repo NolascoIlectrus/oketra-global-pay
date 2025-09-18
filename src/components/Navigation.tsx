@@ -44,21 +44,23 @@ export function Navigation() {
           </div>
 
           {/* Center - Logo and Navigation */}
-          <div className="flex items-center space-x-8">
-            <h1 className="text-xl font-bold">
-              Oketra
-            </h1>
-            
-            <div className="hidden md:flex items-center space-x-6">
-              {navItems.map((item) => (
-                <a
-                  key={item.key}
-                  href={item.href}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {t(item.key)}
-                </a>
-              ))}
+          <div className="flex items-center justify-center flex-1">
+            <div className="flex items-center space-x-8">
+              <h1 className="text-xl font-bold font-garet">
+                Oketra
+              </h1>
+              
+              <div className="hidden md:flex items-center space-x-6">
+                {navItems.map((item) => (
+                  <a
+                    key={item.key}
+                    href={item.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors font-garet"
+                  >
+                    {t(item.key)}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 
